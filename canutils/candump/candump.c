@@ -609,6 +609,8 @@ int main(int argc, char **argv)
 	msg.msg_iovlen = 1;
 	msg.msg_control = &ctrlmsg;
 
+	running = 1;
+
 	while (running) {
 
 		FD_ZERO(&rdfs);
